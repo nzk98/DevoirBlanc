@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    
+}
+/*couleur body*/
+body{
+    background-color: blanchedalmond;
+}
+/*typo des P*/
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*barder radius sur l'img et une largeur*/
+img{
+    border-radius: 50%;
+    width:50%
+}
+/*couleur du header*/
+header{
+    background-color: rgb(239, 136, 0);
+}
+/*mise en page des lien*/
+.links{
+    display: flex;
+    justify-content: center;
+    gap:5%;
+    list-style-type: none;
+}
+/*typo du h1 et alignement*/
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*typo du h4 et alignement*/
+h4{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*mise en page sur info*/
+.info{
+    display:flex;
+    list-style-type: none;
+    background-color: rgb(249, 207, 151);
+    grid-area: info ;
+}
+/*mise en page sur main*/
+.main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "info  moi"
+     ;
+}
+/*couleur moi*/
+#moi{
+    grid-area: moi;
+    background-color: rgb(245, 177, 88);   
+}
+/*mise en page de la liste ordonnée*/
+ol{
+    display: flex;
+    gap:5%;
+    margin-left: 7%;
+}
+/*media queries qui fait passer l'aside en bas de main*/
+@media (max-width:750px){
+    .main{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap:5%;
+        grid-template-areas: 
+        "moi"
+        "info";
+    }
+}
+/*ajout de marge a la nav du footer*/
+.navigation-bottom{
+    margin-top: 5%;
+}
+/*marge sur les input*/
+input{
+    margin:2%;
+}
+/*mise en page du formulaire*/
+.form{
+    display:flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*marge sur le h2 de la page contact*/
+.h2{
+    margin-bottom:5%;
+}
+
+
+
+
